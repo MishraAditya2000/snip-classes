@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <title>Document</title>
 </head>
@@ -36,7 +39,7 @@
               <a class="nav-link" href="index.html#courses">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Faculties</a>
+              <a class="nav-link" href="index.html#faculties">Faculties</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -76,15 +79,15 @@
   class="col-12 bg-image p-5 shadow-1-strong rounded mb-5 d-flex flex-column justify-content-center"
   style="background-image: url('http://127.0.0.1:8887/4115013-B.png');background-size:100%;height:350px;background-repeat: no-repeat;image-rendering: 30%;"
   >
-  <h1 class="mb-3 h1 d-flex justify-content-center" style="margin-right: 48px;"><img src="./assests/SNIP Logo.png" class="img" width="46px"/>WELCOM TO SNIP</h1>
+  <h1 class="mb-3 h1 d-flex justify-content-center animate__animated animate__slideInLeft" style="margin-right: 48px;"><img src="./assests/SNIP Logo.png" class="img-fluid" width="46px"/>WELCOM TO SNIP</h1>
 
-  <p class="p d-flex justify-content-center">
+  <p class="p d-flex justify-content-center animate__animated animate__slideInRight">
     A premier coaching center dedicated to providing<br> studentspursuing a Bachelor of Science degree <br> with the knowledgeand skills necessary to achieve <br>their academic and career goals.
   </p>
 </div>
 
   </div>
-  <div class="row border-bottom text-center" style="margin-left: 8px;margin-right: 8px;padding: 4px">
+  <div class="row border-bottom text-center animate__animated animate__flipInX  animate__delay-1s" style="margin-left: 8px;margin-right: 8px;padding: 4px">
     <div class="col">
       <p class="h3" id="subject" style="color: #F15A24;">4</p>
       <b>Subject</b>
@@ -99,7 +102,7 @@
     </div>
   </div>
 </div>
-<div class="courses" style="margin-top: 18px;">
+<div class="courses animate__animated animate__fadeInLeft" style="margin-top: 18px;">
   <div class="row mt-4" id="courses" style="margin-left: 8px;margin-right: 8px;">
     <div class="col-12 text-center">
       <p class="h3">Courses</p>
@@ -148,8 +151,8 @@
     
   </div>
 </div>
-<div class="faculties mt-4">
-  <div class="row" style="margin-left: 10px;margin-right:10px;">
+<div class="faculties">
+  <div class="row mt-4"  id="faculties" style="margin-left: 10px;margin-right:10px;">
     <div class="col-12 d-flex justify-content-center"><p class="h3">Faculties</p></div>
     <div class="col-12 col-lg-3 col-md-6 col-sm-12 mt-4">
       <div class="profile">
@@ -211,173 +214,485 @@
   </div>
     <div class="row d-flex justify-content-center" style="margin-left: 4px;margin-right: 4px;">
 
-    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12" style="width: 650px;">
-      <table class="table">
-      <tr>
-        <th class="table-info text-center" colspan="4">Physics</th>
-      </tr>
-      <tr class="table-warning">
-        <td>Batch</td>
-        <td>7.30-8.30</td>
-        <td>4.30-5.30</td>
-        <td>5.30-6.30</td>
-      </tr>
-      <tr>
-        <td>Bsc II Sem</td>
-        <td>Mon,Wed</td>
-        <td></td>
-        <td>Sat</td>
-      </tr>
-      <tr>
-        <td>Bsc IV Sem</td>
-        <td>Tue</td>
-        <td>Wed</td>
-        <td>Fri</td>  
-      </tr>
-      <tr>
-        <td>Bsc VI Sem</td>
-        <td>Thu</td>
-        <td>Mon</td>
-        <td>Sat</td>  
-      </tr>
-        <td>GE 1st Yr</td>
-        <td></td>
-        <td>Thu</td>
-        <td>Thu</td>  
-      </tr>
-      <tr>
-        <td>GE 2st Yr</td>
-        <td>Sun</td>
-        <td>Tue</td>
-        <td>Tue</td>  
-      </tr>
-    </table>
+    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center" style="width: 650px;">
+    <p class="h5">Physics</p>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item"> <!--ACCORDION-->
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            B.Sc I Semester
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>Mon,Wed</td>
+                <td></td>
+                <td>Sat</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item"><!--ACCORDION-->
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            B.Sc III Semester
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">  
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td>Mon</td>
+                <td>Sat</td>  
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item"><!--ACCORDION-->
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            B.Sc V Semester
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+        <table class="table table-border">
+          <tr>
+            <td>7.30-8.30</td>
+            <td>4.30-5.30</td>
+            <td>5.30-6.30</td>
+          </tr>
+          <tr>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Fri</td>
+          </tr>
+        </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item"><!--ACCORDION-->
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            B.Sc 1st Yr GE
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+        <table class="table table-border">
+          <tr>
+            <td>7.30-8.30</td>
+            <td>4.30-5.30</td>
+            <td>5.30-6.30</td>
+          </tr>
+          <tr>
+            <td>---</td>
+            <td>Thu</td>
+            <td>Thu</td> 
+          </tr>
+        </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item"><!--ACCORDION-->
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+              B.Sc 2nd Yr GE
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+          <table class="table table-border">
+            <tr>
+              <td>7.30-8.30</td>
+              <td>4.30-5.30</td>
+              <td>5.30-6.30</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>Wed</td>
+              <td>Fri</td>
+            </tr>
+          </table>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12" style="width: 650px;">
-            <table class="table">
-      <tr>
-        <th class="table-info text-center" colspan="4">Chemistry</th>
-      </tr>
-      <tr class="table-warning">
-        <td>Batch</td>
-        <td>7.30-8.30</td>
-        <td>4.30-5.30</td>
-        <td>5.30-6.30</td>
-      </tr>
-      <tr>
-        <td>Bsc II Sem</td>
-        <td>Mon,Wed</td>
-        <td></td>
-        <td>Sat</td>
-      </tr>
-      <tr>
-        <td>Bsc IV Sem</td>
-        <td>Tue</td>
-        <td>Wed</td>
-        <td>Fri</td>  
-      </tr>
-      <tr>
-        <td>Bsc VI Sem</td>
-        <td>Thu</td>
-        <td>Mon</td>
-        <td>Sat</td>  
-      </tr>
-        <td>GE 1st Yr</td>
-        <td></td>
-        <td>Thu</td>
-        <td>Thu</td>  
-      </tr>
-      <tr>
-        <td>GE 2st Yr</td>
-        <td>Sun</td>
-        <td>Tue</td>
-        <td>Tue</td>  
-      </tr>
-    </table>
     </div>
-    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12" style="width: 650px;">
-      <table class="table">
-<tr>
-  <th class="table-info text-center" colspan="4">Mathematics</th>
-</tr>
-<tr class="table-warning">
-  <td>Batch</td>
-  <td>7.30-8.30</td>
-  <td>4.30-5.30</td>
-  <td>5.30-6.30</td>
-</tr>
-<tr>
-  <td>Bsc II Sem</td>
-  <td>Mon,Wed</td>
-  <td></td>
-  <td>Sat</td>
-</tr>
-<tr>
-  <td>Bsc IV Sem</td>
-  <td>Tue</td>
-  <td>Wed</td>
-  <td>Fri</td>  
-</tr>
-<tr>
-  <td>Bsc VI Sem</td>
-  <td>Thu</td>
-  <td>Mon</td>
-  <td>Sat</td>  
-</tr>
-  <td>GE 1st Yr</td>
-  <td></td>
-  <td>Thu</td>
-  <td>Thu</td>  
-</tr>
-<tr>
-  <td>GE 2st Yr</td>
-  <td>Sun</td>
-  <td>Tue</td>
-  <td>Tue</td>  
-</tr>
-</table>
+    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center" style="width: 650px;margin-bottom: 8px;">
+        <p class="h5">Chemistry</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item"> <!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChemOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseChemOne">
+                B.Sc I Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseChemOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <table class="table table-border">
+                  <tr>
+                    <td>7.30-8.30</td>
+                    <td>4.30-5.30</td>
+                    <td>5.30-6.30</td>
+                  </tr>
+                  <tr>
+                    <td>Mon,Wed</td>
+                    <td>---</td>
+                    <td>Sat</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChemTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseChemTwo">
+                B.Sc III Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseChemTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">  
+                <table class="table table-border">
+                  <tr>
+                    <td>7.30-8.30</td>
+                    <td>4.30-5.30</td>
+                    <td>5.30-6.30</td>
+                  </tr>
+                  <tr>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Fri</td>  
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChemThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseChemThree">
+                B.Sc V Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseChemThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td>Mon</td>
+                <td>Sat</td> 
+              </tr>
+            </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChemFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseChemFour">
+                B.Sc 1st Yr GE
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseChemFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>---</td>
+                <td>Thu</td>
+                <td>Thu</td> 
+              </tr>
+            </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChemFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseChemFive">
+                  B.Sc 2nd Yr GE
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseChemFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+              <table class="table table-border">
+                <tr>
+                  <td>7.30-8.30</td>
+                  <td>4.30-5.30</td>
+                  <td>5.30-6.30</td>
+                </tr>
+                <tr>
+                  <td>Sun</td>
+                  <td>Tue</td>
+                  <td>Tue</td> 
+                </tr>
+              </table>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
-    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12" style="width: 650px;">
-      <table class="table">
-<tr>
-  <th class="table-info text-center" colspan="4">Zoology</th>
-</tr>
-<tr class="table-warning">
-  <td>Batch</td>
-  <td>7.30-8.30</td>
-  <td>4.30-5.30</td>
-  <td>5.30-6.30</td>
-</tr>
-<tr>
-  <td>Bsc II Sem</td>
-  <td>Mon,Wed</td>
-  <td></td>
-  <td>Sat</td>
-</tr>
-<tr>
-  <td>Bsc IV Sem</td>
-  <td>Tue</td>
-  <td>Wed</td>
-  <td>Fri</td>  
-</tr>
-<tr>
-  <td>Bsc VI Sem</td>
-  <td>Thu</td>
-  <td>Mon</td>
-  <td>Sat</td>  
-</tr>
-  <td>GE 1st Yr</td>
-  <td></td>
-  <td>Thu</td>
-  <td>Thu</td>  
-</tr>
-<tr>
-  <td>GE 2st Yr</td>
-  <td>Sun</td>
-  <td>Tue</td>
-  <td>Tue</td>  
-</tr>
-</table>
+    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center" style="width: 650px;margin-bottom: 8px;">
+      <p class="h5">Mathematics</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item"> <!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMathOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseMathOne">
+                B.Sc I Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseMathOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <table class="table table-border">
+                  <tr>
+                    <td>7.30-8.30</td>
+                    <td>4.30-5.30</td>
+                    <td>5.30-6.30</td>
+                  </tr>
+                  <tr>
+                    <td>Mon,Wed</td>
+                    <td>---</td>
+                    <td>Sat</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMathTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseMathTwo">
+                B.Sc III Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseMathTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">  
+                <table class="table table-border">
+                  <tr>
+                    <td>7.30-8.30</td>
+                    <td>4.30-5.30</td>
+                    <td>5.30-6.30</td>
+                  </tr>
+                  <tr>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Fri</td>  
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMathThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseMathThree">
+                B.Sc V Semester
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseMathThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td>Mon</td>
+                <td>Sat</td> 
+              </tr>
+            </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMathFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseMathFour">
+                B.Sc 1st Yr GE
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseMathFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>---</td>
+                <td>Thu</td>
+                <td>Thu</td> 
+              </tr>
+            </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--ACCORDION-->
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMathFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseMathFive">
+                  B.Sc 2nd Yr GE
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseMathFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+              <table class="table table-border">
+                <tr>
+                  <td>7.30-8.30</td>
+                  <td>4.30-5.30</td>
+                  <td>5.30-6.30</td>
+                </tr>
+                <tr>
+                  <td>Sun</td>
+                  <td>Tue</td>
+                  <td>Tue</td> 
+                </tr>
+              </table>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-center" style="width: 650px;margin-bottom: 8px;">
+      <p class="h5">Zoology</p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item"> <!--ACCORDION-->
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZooOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseZooOne">
+              B.Sc I Semester
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseZooOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <table class="table table-border">
+                <tr>
+                  <td>7.30-8.30</td>
+                  <td>4.30-5.30</td>
+                  <td>5.30-6.30</td>
+                </tr>
+                <tr>
+                  <td>Mon,Wed</td>
+                  <td>---</td>
+                  <td>Sat</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item"><!--ACCORDION-->
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZooTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseZooTwo">
+              B.Sc III Semester
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseZooTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">  
+              <table class="table table-border">
+                <tr>
+                  <td>7.30-8.30</td>
+                  <td>4.30-5.30</td>
+                  <td>5.30-6.30</td>
+                </tr>
+                <tr>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Fri</td>  
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item"><!--ACCORDION-->
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZooThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseZooThree">
+              B.Sc V Semester
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseZooThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+          <table class="table table-border">
+            <tr>
+              <td>7.30-8.30</td>
+              <td>4.30-5.30</td>
+              <td>5.30-6.30</td>
+            </tr>
+            <tr>
+              <td>Thu</td>
+              <td>Mon</td>
+              <td>Sat</td> 
+            </tr>
+          </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item"><!--ACCORDION-->
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZooFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseZooFour">
+              B.Sc 1st Yr GE
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseZooFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+          <table class="table table-border">
+            <tr>
+              <td>7.30-8.30</td>
+              <td>4.30-5.30</td>
+              <td>5.30-6.30</td>
+            </tr>
+            <tr>
+              <td>---</td>
+              <td>Thu</td>
+              <td>Thu</td> 
+            </tr>
+          </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item"><!--ACCORDION-->
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZooFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseZooFive">
+                B.Sc 2nd Yr GE
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseZooFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+            <table class="table table-border">
+              <tr>
+                <td>7.30-8.30</td>
+                <td>4.30-5.30</td>
+                <td>5.30-6.30</td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>Tue</td>
+                <td>Tue</td> 
+              </tr>
+            </table>
+              </div>
+            </div>
+          </div>
+      </div>
 </div>
     </div>
 
@@ -417,7 +732,7 @@ const obj2=document.getElementById("batch");
 const obj3=document.getElementById("student");
 animateValue(obj, 0, 4, 2000);
 animateValue(obj2,0,12,2500);
-animateValue(obj3,0,60,3000);
+animateValue(obj3,0,60,2800);
 </script>
 </body>
 <style>
